@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 200px 500px 1fr;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 15px #917c6f;
+  position: fixed;
+  top:0;
+  z-index: 100;
+ background-color: white;
+}
+.first-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-content img {
+  background-color: black;
+}
+.second-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-content .search-bar {
+  width:100%;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px gray;
+  padding-left: 15px;
+  outline: none;
+}
+.search-bar:active, .search-bar:hover {
+  box-shadow: 0 0 3px rgb(19, 137, 248);
+}
+.third-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.third-content a {
+  font-size: 17px;
+  padding: 5px 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.videos {
+  background-color: rgb(240, 236, 236);
+  box-shadow: 0 0 3px rgb(34, 116, 193);
+  color: rgb(34, 116, 193);
+}
+
+a:hover {
+  background-color: rgb(240, 236, 236);
+  box-shadow: 0 0 3px rgb(34, 116, 193);
+  color: rgb(34, 116, 193);
+  cursor:pointer;
+}
+nav {
+  width:100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top:60px;
+  right:0;
+  left:0;
+  background-color: white;
+}
+.spacing {
+  padding-left: 55px;
+}
+nav button {
+  padding:7px;
+  margin-left:10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.life {
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  display: inline;
+}
+.bible:hover,.trials:hover,.studies:hover,.depression:hover {
+  opacity: .7;
+  background-color: #dedad8;
+}
+/*
+nav button:hover {
+  opacity: .7;
+  background-color: #dedad8;
+ 
+}
+*/
+section {
+  width:100%;
+  height: 510px;
+  background-color: aliceblue;
+  background: url('../images/motto_cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(150%);
+}
+.margin {
+  padding-top: 120px;
+}
+.img-grid {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.img-content {
+  height: 300px;
+  background-color: #917c6f;
+  
+}
+.img-content:hover {
+  transform:  scale(1.02);
+  margin-top:2px;
+  margin-right:2px;
+  margin-bottom:2px;
+  margin-left:2px;
+  
+}
+.img-content img {
+  width:100%;
+  height: 100%;
+  
+}
+
+.youtube-video {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  background-color: #D0E1D4;
+  height: 300px;
+  box-shadow: 0 0 1px gray;
+}
+.youtube-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: #f2f8f3;
+}
+footer span {
+  font-size: 18px;
+  font-weight: 550;
+}
